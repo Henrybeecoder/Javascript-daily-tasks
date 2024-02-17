@@ -1,27 +1,6 @@
-// First Task
-// The museum of incredibly dull things
-// The museum of incredibly dull things wants to get rid of some exhibits. Miriam, the interior architect, comes up with a plan to remove the most boring exhibits. She gives them a rating, and then removes the one with the lowest rating.
 
-// However, just as she finished rating all exhibits, she's off to an important fair, so she asks you to write a program that tells her the ratings of the exhibits after removing the lowest one. Fair enough.
-
-// Task
-// Given an array of integers, remove the smallest value. Do not mutate the original array/list. If there are multiple elements with the same value, remove the one with the lowest index. If you get an empty array/list, return an empty array/list.
-
-// Don't change the order of the elements that are left.
-
-// Examples
-// * Input: [1,2,3,4,5], output = [2,3,4,5]
-// * Input: [5,3,2,1,4], output = [5,3,2,4]
-// * Input: [2,2,1,2,1], output = [2,2,2,1]
-
-//First Task solution
-
-function removeSmallest(numbers) {
-    return [];
-}
-
-
-//Task Number 2
+// ##################################################################################
+//Task Number 1
 
 // You are going to be given a word. Your job is to return the middle character of the word. 
 // If the word's length is odd, return the middle character. 
@@ -45,13 +24,61 @@ function removeSmallest(numbers) {
 // The middle character(s) of the word represented as a string.
 
 function getMiddle(str) {
-    if (str.length % 2 === 0) {
-
-    }
+   
    let medianIndex = str.length % 2 === 0 ? (str.length) / 2 : (str.length + 1 ) / 2 
    let answer =  str.length % 2 === 0 ? `${str[medianIndex - 1]}${str[medianIndex]}` : str[medianIndex - 1]
 console.log(answer)
 }
 
-getMiddle("A")
+getMiddle("henry")
 
+//TESTS
+
+// Test.assertEquals(getMiddle("test"),"es");
+// Test.assertEquals(getMiddle("testing"),"t");
+// Test.assertEquals(getMiddle("middle"),"dd");
+// Test.assertEquals(getMiddle("A"),"A");
+
+ //########################################################################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ // #################################################################################################################
+
+ // TASK NUMBER 2 
+
+//  In this kata you should simply determine, whether a given year is a leap year or not.
+//   In case you don't know the rules, here they are:
+
+// Years divisible by 4 are leap years,
+// but years divisible by 100 are not leap years,
+// but years divisible by 400 are leap years.
+// Tested years are in range 1600 ≤ year ≤ 4000.
+
+function isLeapYear (year) {
+ if (year % 4 === 0 || year % 400 === 0) {
+    return true
+ }
+ else {
+    return false
+ }
+}
+
+isLeapYear(2024)
+
+// ##########################################################################################################################
